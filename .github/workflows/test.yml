@@ -1,0 +1,25 @@
+name: Test replace-vars-action
+
+on:
+  push:
+    paths:
+      - "**.js"
+      - action.yml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run replace-vars-action Action
+        uses: ./
+        with:
+          input-file: "Docs/Data/tempate.json"
+          output-file: "Docs/Data/result.json"
+        env:
+          API_KEY: "test-token-123"
+          HOST: "github.com"
+
+      - name: Show Output
+        run: cat Docs/Data/result.json

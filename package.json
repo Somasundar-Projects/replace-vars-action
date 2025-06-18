@@ -1,0 +1,39 @@
+{
+  "name": "replace-vars-action",
+  "version": "1.0.0",
+  "description": "A lightweight GitHub Action to replace placeholders like `#{PLACEHOLDER}` with environment variables or secrets in files.",
+  "keywords": [
+    "Token",
+    "Swap",
+    "Placeholder",
+    "Replace"
+  ],
+  "homepage": "https://github.com/Somasundar-Projects/replace-vars-action#readme",
+  "bugs": {
+    "url": "https://github.com/Somasundar-Projects/replace-vars-action/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Somasundar-Projects/replace-vars-action.git"
+  },
+  "license": "MIT",
+  "author": "Somasundar-Projects",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx ncc build src/index.ts -o dist",
+    "release": "npx standard-version",
+    "preview": "npx standard-version --prerelease preview",
+    "tags": "git push --follow-tags"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0",
+    "@types/node": "^24.0.3",
+    "@vercel/ncc": "^0.38.3",
+    "conventional-changelog-cli": "^5.0.0",
+    "typescript": "^5.8.3"
+  }
+}

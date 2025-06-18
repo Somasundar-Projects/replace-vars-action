@@ -1,0 +1,23 @@
+name: Replace Placeholders with Secrets or Environment Variables
+description: "Replaces #{VAR} in file using environment variables or github secrets"
+author: "Somasundar-Projects"
+
+inputs:
+  input-file:
+    description: "Path to input file"
+    required: true
+  output-file:
+    description: "Path to output file"
+    required: false
+
+outputs:
+  result:
+    description: "Final processed content file as string"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
+
+branding:
+  icon: "file-text"
+  color: "blue"
