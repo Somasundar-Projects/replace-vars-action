@@ -39,7 +39,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Replace placeholders
-        uses: Somasundar-Projects/replace-vars-action@v1
+        uses: Somasundar-Projects/replace-vars-action@v1.1.0
         with:
           file: "./config/template.txt"
           output: "./config/processed.txt"
