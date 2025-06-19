@@ -1,6 +1,6 @@
 {
   "name": "replace-vars-action",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A lightweight GitHub Action to replace placeholders like `#{PLACEHOLDER}` with environment variables or secrets in files.",
   "keywords": [
     "Token",
