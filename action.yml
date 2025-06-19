@@ -1,4 +1,4 @@
-name: Replace Placeholders with Secrets or Environment Variables
+name: "replace-vars-action"
 description: "Replaces #{VAR} in file using environment variables or github secrets"
 author: "Somasundar-Projects"
 
