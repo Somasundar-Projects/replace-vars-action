@@ -1,6 +1,6 @@
 # Replace Placeholders with Secrets or Environment Variables
 
-[![GitHub Marketplace](https://img.shields.io/badge/GitHub%20Marketplace-Action-blue?logo=github)](https://github.com/marketplace/actions/replace-placeholders-with-secrets-or-env)
+[![GitHub Marketplace](https://img.shields.io/badge/GitHub%20Marketplace-Action-blue?logo=github)](https://github.com/marketplace/actions/replace-vars-action)
 
 This GitHub Action replaces placeholders like `#{VAR}` in a given file using environment variables or GitHub secrets.
 
