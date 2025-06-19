@@ -1,0 +1,23 @@
+name: Test Action From MarketPlace
+
+on:
+  workflow_dispatch:
+  release:
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: run replace-vars-action Action
+        uses: Somasundar-Projects/replace-vars-action@v1.1.0
+        with:
+          input-file: "docs/Data/tempate.json"
+          output-file: "docs/Data/result.json"
+        env:
+          API_KEY: "test-token-123"
+          HOST: "github.com"
+
+      - name: Show Output
+        run: cat docs/Data/result.json
