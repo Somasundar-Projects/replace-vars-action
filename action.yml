@@ -1,4 +1,4 @@
-name: "replace-vars-action"
+name: replace-vars-action
 description: "Replaces #{VAR} in file using environment variables or github secrets"
 author: "Somasundar-Projects"
 
