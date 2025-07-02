@@ -41,8 +41,8 @@ jobs:
       - name: Replace placeholders
         uses: Somasundar-Projects/replace-vars-action@v1.1.0
         with:
-          file: "./config/template.txt"
-          output: "./config/processed.txt"
+          input-file: "./config/template.txt"
+          output-file: "./config/processed.txt"
         env:
           API_KEY: ${{ secrets.API_KEY }}
           BASE_URL: ${{ secrets.BASE_URL }}
